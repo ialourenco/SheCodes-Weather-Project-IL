@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wather app Inês</title>
+    <meta charset="UTF-8" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="SRC/weatherapp CSS.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="weatherIcon">
+            <i class="fas fa-cloud-rain"></i>
+            <img id="weatherIcon" src="" alt="" />
+          </div>
+          <h1 class="currentTemperature" id="currentTemp">25º</h1>
+          <div class="changedegrees">
+            <a href="#" id="celsius">ºC</a> | <a href="#" id="fahrenheit">ºF</a>
+          </div>
+          <div class="minMaxTemp">
+            <span id="maxTemperature">26</span>
+            /
+            <span id="minTemperature">6</span>ºC
+          </div>
+          <h4 id="weatherDescription">Rainy</h4>
+        </div>
+        <div id="where" class="col-6">
+          <div class="cityDayHour">
+            <h1 id="curCity">City</h1>
+            <span class="day">day</span>
+            <div class="hour" id="currentHour">hour</div>
+          </div>
+        </div>
+      </div>
+      <div id="extrainfo" class="row">
+        <div class="col">Feels Like: <span id="realFeel">90</span>ºC</div>
+        <div class="col">Humidity: <span id="humidity">30</span>%</div>
+
+        <div class="col">Wind: <span id="wind">90</span>Km/h</div>
+      </div>
+      <br />
+      <form>
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            id="cities"
+            placeholder="Search city"
+          />
+
+          <button
+            type="submit"
+            class="fas fa-search"
+            id="submitButton"
+          ></button>
+          <i id="currentLoc" class="fas fa-map-marker-alt"></i>
+        </div>
+      </form>
+
+      <div class="row row-cols-7">
+        <div class="col">
+          Monday
+          <i class="fas fa-cloud-showers-heavy"></i>
+          <p>14º / 27º</p>
+        </div>
+        <div class="col">
+          Tuesday
+          <i class="fas fa-cloud-sun-rain"></i>
+          <p>14º / 27º</p>
+        </div>
+        <div class="col">
+          Wednsday
+          <i class="fas fa-cloud-sun"></i>
+          <p>14º / 27º</p>
+        </div>
+        <div class="col">
+          Thursday
+          <i class="fas fa-sun"></i>
+          <p>15º / 29º</p>
+        </div>
+        <div class="col">
+          Friday
+          <i class="fas fa-cloud-sun"></i>
+          <p>11º / 17º</p>
+        </div>
+        <div class="col">
+          Saturday
+          <i class="fas fa-cloud-sun-rain"></i>
+          <p>12º / 27º</p>
+        </div>
+        <div class="col">
+          Sunday
+          <i class="fas fa-sun"></i>
+          <p>13º / 28º</p>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/a7f948361b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="SRC/script.js"></script>
+  </body>
+</html>

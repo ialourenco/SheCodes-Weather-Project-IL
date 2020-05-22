@@ -1,0 +1,92 @@
+.container {
+  background-color: #f0f0f0;
+  color: #888888;
+  max-width: 700px;
+  margin: 50px;
+  display: block;
+  margin: 50px auto;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
+    0 4px 8px rgba(0, 0, 0, 0.07), 0 8px 16px rgba(0, 0, 0, 0.07),
+    0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+}
+
+.weatherIcon {
+  font-size: 100px;
+  display: inline;
+  color: #4cd3c2;
+}
+.currentTemperature {
+  display: inline;
+}
+.changedegrees {
+  display: inline;
+}
+.maxTemperature {
+  font-weight: bolder;
+}
+
+.minTemperature {
+  display: inline;
+}
+.cityDayHour {
+  text-align: right;
+  margin: 20px;
+}
+
+.form-group i {
+  text-align: center;
+}
+
+button.fas {
+  font-size: 20px;
+  background: transparent;
+  border: 0;
+  color: #888888;
+}
+
+#currentLoc {
+  font-size: 20px;
+  background: transparent;
+  border: 0;
+}
+#currentLoc:hover {
+  cursor: pointer;
+}
+
+.col i {
+  font-size: 50px;
+  color: #4cd3c2;
+}
+#extrainfo {
+  background-color: #fdcb9e;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  padding: 10px;
+  text-align: center;
+  margin-left: 1px;
+  font-weight: bold;
+}
+.minMaxTemp {
+  background-color: #fdcb9e;
+  border-radius: 30px;
+  padding: 10px;
+  text-align: center;
+  margin-left: 1px;
+  font-weight: bold;
+  margin-right: 220px;
+  margin-bottom: 0;
+}
+#weatherDescription {
+  padding: 10px;
+  font-weight: bold;
+}
+
+#where {
+  font-size: 25px;
+}
+
+#curCity {
+  font-size: 50px;
+}
