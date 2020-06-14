@@ -91,8 +91,10 @@ findLocation.addEventListener("click", getCurrentLocation);
 function showWeather(response) {
   console.log(response.data);
 
+  celsiusTemperature = response.data.main.temp;
+
   let currentTemp = document.querySelector("#currentTemp");
-  currentTemp.innerHTML = Math.round(response.data.main.temp);
+  currentTemp.innerHTML = Math.round(celsiusTemperature);
 
   let maxTemp = document.querySelector("#maxTemperature");
   maxTemp.innerHTML = Math.round(response.data.main.temp_max);
@@ -124,16 +126,22 @@ function showWeather(response) {
 //changing Celcius/Farenhight
 function changeCel(event) {
   event.preventDefault();
+  celIcon.classList.add("active");
+  farIcon.classList.remove("active");
   let tempC = document.querySelector("#currentTemp");
-  tempC.innerHTML = `19`;
+  tempC.innerHTML = Math.round(celsiusTemperature);
 }
 let celIcon = document.querySelector("#celsius");
 celIcon.addEventListener("click", changeCel);
 
 function changeFar(event) {
   event.preventDefault();
+  celIcon.classList.remove("active");
+  farIcon.classList.add("active");
   let tempF = document.querySelector("#currentTemp");
-  tempF.innerHTML = `66`;
+  tempF.innerHTML = Math.round((celsiusTemperature * 9) / 5 + 32);
 }
 let farIcon = document.querySelector("#fahrenheit");
 farIcon.addEventListener("click", changeFar);
+
+let celsiusTemperature = null;

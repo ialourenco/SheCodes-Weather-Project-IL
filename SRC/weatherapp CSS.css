@@ -32,6 +32,15 @@
   position: relative;
   top: -45px;
 }
+
+.changedegrees .active {
+  color: #888888;
+  cursor: default;
+}
+
+.changedegrees .active:hover {
+  text-decoration: none;
+}
 .maxTemperature {
   font-weight: bolder;
 }
