@@ -84,6 +84,7 @@ button.fas {
 #weatherDescription {
   padding: 10px;
   font-weight: bold;
+  text-transform: capitalize;
 }
 
 #where {

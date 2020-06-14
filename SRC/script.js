@@ -95,7 +95,7 @@ function showWeather(response) {
   minTemp.innerHTML = Math.round(response.data.main.temp_min);
 
   let description = document.querySelector("#weatherDescription");
-  description.innerHTML = response.data.weather[0].description.toUpperCase();
+  description.innerHTML = response.data.weather[0].description;
 
   //let weatherIcon = document.querySelector("#weatherIcon");
   //weatherIcon.innerHTML = response.data.weather[0].icon;
