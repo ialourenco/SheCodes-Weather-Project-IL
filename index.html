@@ -48,19 +48,25 @@
       <br />
       <form>
         <div class="form-group">
-          <input
-            type="text"
-            class="form-control"
-            id="cities"
-            placeholder="Search city"
-          />
+          <div class="row">
+            <div class="col-10">
+              <input
+                type="text"
+                class="form-control"
+                id="cities"
+                placeholder="Search city"
+              />
+            </div>
 
-          <button
-            type="submit"
-            class="fas fa-search"
-            id="submitButton"
-          ></button>
-          <i id="currentLoc" class="fas fa-map-marker-alt"></i>
+            <div id="buttons" class="col-2">
+              <button
+                type="submit"
+                class="fas fa-search"
+                id="submitButton"
+              ></button>
+              <i id="currentLoc" class="fas fa-map-marker-alt"></i>
+            </div>
+          </div>
         </div>
       </form>
 
