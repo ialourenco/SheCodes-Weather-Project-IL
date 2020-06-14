@@ -102,7 +102,7 @@ function getCurrentLocation(event) {
 let findLocation = document.querySelector("#currentLoc");
 findLocation.addEventListener("click", getCurrentLocation);
 
-//Weather and other info
+//Weather, Forecast and other info
 function showForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = null;
@@ -112,9 +112,9 @@ function showForecast(response) {
   for (let index = 0; index < 6; index++) {
     forecast = response.data.list[index];
     forecastElement.innerHTML += `
-    <div class="col-2" id="forecastText">
+    <div class="col-2 forecastText" id="forecastText_${index}">
       <h6>${formatHours(forecast.dt * 1000)}</h6>
-      <img id = "forecastIcons"
+      <img class="forecastIcons" id ="forecastIcons_${index}"
         src="https://openweathermap.org/img/wn/${
           forecast.weather[0].icon
         }@2x.png"
@@ -185,5 +185,3 @@ let farIcon = document.querySelector("#fahrenheit");
 farIcon.addEventListener("click", changeFar);
 
 let celsiusTemperature = null;
-
-//Forecast
