@@ -103,10 +103,11 @@ function showWeather(response) {
   let description = document.querySelector("#weatherDescription");
   description.innerHTML = response.data.weather[0].description;
 
-  //let weatherIcon = document.querySelector("#weatherIcon");
-  //weatherIcon.innerHTML = response.data.weather[0].icon;
-  //console.log(weatherIcon);
-  //src = `http://openweathermap.org/img/wn/${icon}.png)
+  let weatherIcon = document.querySelector("#weatherIcon");
+  weatherIcon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 
   let humidity = document.querySelector("#humidity");
   humidity.innerHTML = response.data.main.humidity;
