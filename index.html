@@ -18,7 +18,11 @@
       <div class="row">
         <div class="col-6">
           <div class="weatherIcon">
-            <img id="weatherIcon" src="" alt="" />
+            <img
+              id="weatherIcon"
+              src="http://openweathermap.org/img/wn/10d@2x.png"
+              alt=""
+            />
           </div>
           <h1 class="currentTemperature" id="currentTemp">25</h1>
           <div class="changedegrees">
@@ -71,43 +75,8 @@
         </div>
       </form>
 
-      <div class="row row-cols-7">
-        <div class="col">
-          Monday
-          <i class="fas fa-cloud-showers-heavy"></i>
-          <p>14º / 27º</p>
-        </div>
-        <div class="col">
-          Tuesday
-          <i class="fas fa-cloud-sun-rain"></i>
-          <p>14º / 27º</p>
-        </div>
-        <div class="col">
-          Wednsday
-          <i class="fas fa-cloud-sun"></i>
-          <p>14º / 27º</p>
-        </div>
-        <div class="col">
-          Thursday
-          <i class="fas fa-sun"></i>
-          <p>15º / 29º</p>
-        </div>
-        <div class="col">
-          Friday
-          <i class="fas fa-cloud-sun"></i>
-          <p>11º / 17º</p>
-        </div>
-        <div class="col">
-          Saturday
-          <i class="fas fa-cloud-sun-rain"></i>
-          <p>12º / 27º</p>
-        </div>
-        <div class="col">
-          Sunday
-          <i class="fas fa-sun"></i>
-          <p>13º / 28º</p>
-        </div>
-      </div>
+      <div class="row weather-forecast" id="forecast"></div>
+
       <small id="codedBy">
         <a
           href="https://github.com/ialourenco/SheCodes-Weather-Project-IL"
