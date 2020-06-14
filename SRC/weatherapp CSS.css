@@ -18,9 +18,12 @@
 }
 .currentTemperature {
   display: inline;
+  font-size: 100px;
 }
 .changedegrees {
   display: inline;
+  position: relative;
+  top: -60px;
 }
 .maxTemperature {
   font-weight: bolder;
